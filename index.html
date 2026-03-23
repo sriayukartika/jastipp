@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TitipMakan - Pesan Tanpa Antre</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">TitipMakan</div>
+    <a href="#menu" class="btn-nav">Menu</a>
+  </nav>
+
+  <!-- Hero Section (Dengan Gambar) -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Titip Makanan di Kampus<br><span>Tanpa Antre</span></h1>
+      <p>Pesan sekarang, ambil nanti. Praktis untuk mahasiswa sibuk.</p>
+      <a href="#menu" class="btn-utama">Lihat Menu</a>
+    </div>
+    <div class="hero-img">
+      <!-- Gambar ilustrasi makanan -->
+      <img src="G1.png" alt="Gambar Makanan">
+    </div>
+  </section>
+
+  <!-- Cara Kerja -->
+  <section class="cara-kerja">
+    <h2>Cara Kerja</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <p>Pilih Menu</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <p>Submit Order</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <p>Ambil Makanan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <h2>Menu Favorit</h2>
+    <div class="menu-list">
+      
+      <!-- Menu 1 -->
+      <div class="card">
+        <img src="G2.jpeg" alt="Mie Ayam">
+        <div class="info">
+          <h3>Mie Ayam</h3>
+          <div class="harga">Rp12.000</div>
+          <button class="btn-pesan" data-nama="Mie Ayam" data-harga="12000">Pesan</button>
+        </div>
+      </div>
+
+      <!-- Menu 2 -->
+      <div class="card">
+        <img src="G3.jpeg" alt="RiceBowl">
+        <div class="info">
+          <h3>Rice Bowl</h3>
+          <div class="harga">Rp15.000</div>
+          <button class="btn-pesan" data-nama="Rice Bowl" data-harga="15000">Pesan</button>
+        </div>
+      </div>
+
+      <!-- Menu 3 -->
+      <div class="card">
+        <img src="G4.jpeg" alt=Geprek">
+        <div class="info">
+          <h3>Geprek</h3>
+          <div class="harga">Rp13.000</div>
+          <button class="btn-pesan" data-nama="Geprek" data-harga="13000">Pesan</button>
+        </div>
+      </div>
+
+      <!-- Menu 4 -->
+      <div class="card">
+        <img src="G5.jpeg" alt="Ayam Geprek">
+        <div class="info">
+          <h3>Nasi Goreng</h3>
+          <div class="harga">Rp14.000</div>
+          <button class="btn-pesan" data-nama="Nasi Goreng" data-harga="14000">Pesan</button>
+        </div>
+      </div>
+
+      <!-- Menu 5 -->
+      <div class="card">
+        <img src="G7.jpeg" alt="Batagor">
+        <div class="info">
+          <h3>Batagor</h3>
+          <div class="harga">Rp15.000</div>
+          <button class="btn-pesan" data-nama="Batagor" data-harga="15000">Pesan</button>
+        </div>
+      </div>
+
+      <!-- Menu 6 -->
+      <div class="card">
+        <img src="G8.jpeg" alt="Bakso bakar">
+        <div class="info">
+          <h3>Bakso Bakar</h3>
+          <div class="harga">Rp6.000</div>
+          <button class="btn-pesan" data-nama="Bakso bakar" data-harga="6000">Pesan</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal Pesanan -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h3 id="modal-title">Pesan</h3>
+      <p id="modal-harga">Harga</p>
+      <button class="btn-kirim" id="btn-kirim">Konfirmasi</button>
+      <button class="btn-tutup" id="btn-tutup">Batal</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>2026 TitipMakan - Mahasiswa untuk Mahasiswa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
