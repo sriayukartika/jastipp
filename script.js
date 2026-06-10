@@ -29,7 +29,7 @@ tombolPesan.forEach(function(btn) {
   });
 });
 
-// Event tombol kirim dan tutup
+// Event tombol kirim (Update Pesan)
 btnKirim.addEventListener('click', function() {
   alert('Pesanan berhasil! Silakan ambil di kantin.');
   tutupModal();
