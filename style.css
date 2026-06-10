@@ -40,7 +40,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Hero Section (Layout 2 Kolom) */
+/* Hero Section */
 .hero {
   background: linear-gradient(135deg, #00a676, #004d35);
   padding: 40px 30px;
@@ -111,11 +111,24 @@ body {
 .steps {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px; /* Sedikit diperkecil agar muat 4 item */
+  flex-wrap: wrap;
 }
 
 .step {
   text-align: center;
+}
+
+/* Styling untuk Link Kontak */
+.link-kontak {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.link-kontak:hover {
+  transform: scale(1.05);
 }
 
 .num {
@@ -130,6 +143,11 @@ body {
   justify-content: center;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+/* Warna khusus nomor WA */
+.num.wa {
+  background: #25D366; /* Warna Hijau WhatsApp */
 }
 
 /* Menu */
@@ -262,7 +280,7 @@ footer {
 /* Responsive HP */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column-reverse; /* Gambar di atas, tulis di bawah */
+    flex-direction: column-reverse;
     text-align: center;
     padding: 30px 20px;
   }
